@@ -12,32 +12,27 @@
     <body>
 
         <header>
-            <nav class="navbar fixed-top navbar-expand-lg bg-body-tertiary">
-                <div class="container-fluid">
-                  <a class="navbar-brand" href="#">Resturaunt Example</a>
-                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                  </button>
-                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                      <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="/html/menu.html">Menu</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="/html/contact.html">Contact Us</a>
-                      </li>
-                
-                    </ul>
-                    <!-- <form class="d-flex" role="search">
-                      <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                      <button class="btn btn-outline-success" type="submit">Search</button>
-                    </form> -->
-                  </div>
+            <nav id="desktopnav" class="desktopnav">
+                <h1 class="logotext">Pectol Prints</h1>
+                <div class="desktopnavdiv">
+                <a class="desktopnava1" href="https://pectolprints.netlify.app/"><li class="desktopnavli">Home</li></a>
+                <a class="desktopnava" href="/html/products.html"><li class="desktopnavli">Products</li></a>
+                <a class="desktopnava" href="/html/support.html"><li class="desktopnavli">Support</li></a>
                 </div>
-              </nav>
+            </nav>
+
+            <nav id="mobilenav" class="mobilenav">
+                <button id="ham" onclick="hamburger()"><img id="iconimg" src="/images/icons/ham.png" /></button>
+                <img src="/images/icons/1.png" class="logotext" />
+                <div class="mobilenavdivhidden" id="mobilenavdiv">
+                <!-- <a class="mobilenava" href=""><li class="mobilenavli">Home</li></a>
+                <a class="mobilenava" href="/html/products.html"><li class="mobilenavli">Products</li></a>
+                <a class="mobilenava" href="/html/support.html"><li class="mobilenavli">Support</li></a> -->
+                </div>
+            </nav>
+
+            
+                
         </header>
 
 
