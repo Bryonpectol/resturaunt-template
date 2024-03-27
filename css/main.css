@@ -1,0 +1,64 @@
+.carousel-item {
+    height: 65vh;
+    object-fit: contain;
+}
+
+.contactform {
+    margin: 5vh 25vh 5vh 25vh;
+    padding: 5vh 15vh 5vh 15vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 25px;
+    border: 2px solid black;
+}
+
+.formh2 {
+    text-align: center;
+}
+
+.menu {
+    margin-top: 20vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.menuitem {
+    border: 2px solid black;
+    padding: 5vh;
+    margin: 5vh;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    width: 50vh;
+
+}
+
+.menuimg {
+    height: 30vh;
+    border-radius: 20px;
+    text-align: center;
+    align-self: center;
+    margin-bottom: 5vh;
+}
+
+.menutitle {
+    align-self: center;
+}
+
+.menuprice {
+    align-self: center;
+}
+
+.google-map {
+    margin: 5vh 5vh 5vh 5vh;
+    display: flex;
+    justify-content: center;
+}
+
+.locationh2 {
+    text-align: center;
+}
