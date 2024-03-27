@@ -20,13 +20,13 @@ function hamburger() {
 
     mobileNav.className = "mobilenavdiv";
     
-    homeLink.setAttribute("href", "https://pectolprints.netlify.app/");
-    productLink.setAttribute("href", "/html/products.html");
-    supportLink.setAttribute("href", "/html/support.html");
+    homeLink.setAttribute("href", "https://uxshore-restaurant.netlify.app/");
+    productLink.setAttribute("href", "/html/menu.html");
+    supportLink.setAttribute("href", "/html/contact.html");
 
     homeLi.textContent = "Home";
-    productLi.textContent = "Products";
-    supportLi.textContent = "Support";
+    productLi.textContent = "Menu";
+    supportLi.textContent = "Contact Us";
 
     homeLi.className = "mobilenavli";
     productLi.className = "mobilenavli";
