@@ -443,12 +443,14 @@
         width: 30px;
         height: 30px;
         padding: 3vh 2vh 2vh 2vh;
+        z-index: 2;
     }
 
     #ham {
         border: none;
         background: none;
         float: right;
+        z-index: 2;
     }
 
     .productdiv {
