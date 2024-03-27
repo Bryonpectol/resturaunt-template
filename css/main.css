@@ -344,7 +344,7 @@
         flex-direction: column;
         text-align: center;
         background-color: white;
-        padding-top: 10vh;
+        padding-top: 15vh;
     }
 
     .first {
@@ -571,7 +571,8 @@
     border-radius: 25px;
     display: flex;
     flex-direction: column;
-    width: 50vh;
+    width: 30vh;
+    align-self: center;
 
 }
 
