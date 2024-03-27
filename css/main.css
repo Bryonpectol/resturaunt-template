@@ -62,3 +62,487 @@
 .locationh2 {
     text-align: center;
 }
+
+
+
+/* Keyframes */
+
+@keyframes navlink {
+    0% {
+        background-color: black;
+        color: white;
+    }
+
+    100% {
+        background-color: white;
+        color: black;
+    }
+}
+
+@keyframes mobilenavthing {
+
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+    
+}
+
+@keyframes button {
+
+    0% {
+        background-color: black;
+        color: white;
+        box-shadow: 0px 0px 5px grey;
+    }
+
+    100% {
+        background-color: white;
+        color: black;
+        box-shadow: 5px 5px 5px grey;
+    }
+
+}
+
+
+
+/* Fonts */
+
+
+
+
+
+/* Desktop */
+
+@media only screen and (min-width: 601px) {
+
+    * {
+        margin: 0px;
+        padding: 0px;
+        overflow-x: hidden;
+    }
+
+    .desktopnav {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        background-color: black;
+        justify-content: center;
+    }
+
+    .desktopnavdiv {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        background-color: black;
+        justify-content: center;
+        margin-right: 16vh;
+    }
+
+    .desktopnava {
+        text-decoration: none;
+        padding: 3vh;
+        color: white;
+    }
+
+    .desktopnava1 {
+        text-decoration: none;
+        padding: 3vh;
+        color: black;
+        background-color: white;
+    }
+
+    .desktopnava:hover {
+        animation: navlink 0.75s forwards;
+    }
+
+    .desktopnavli {
+        list-style-type: none;
+    }
+
+    .mobilenav {
+        visibility: hidden;
+        width: 0px;
+        height: 0px;
+    }
+
+    main {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        margin-left: 1.5vh;
+        margin-right: 1.5vh;
+        text-align: center;
+    }
+
+    .logotext {
+        color: white;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        align-self: center;
+        margin-right: 1vh;
+        float: left;
+        align-items: left;
+    }
+
+    #container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .productdiv {
+        border: 2px solid black;
+        border-radius: 25px;
+        background-color: white;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        padding: 2vh;
+        margin: 2vh;
+        width: 50vh;
+    }
+
+    .productsh2 {
+        margin-top: 2vh;
+    }
+
+    .contactform {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        border: 2px solid black;
+        margin-top: 10vh;
+        width: 100vh;
+        padding: 5vh 0vh 5vh 0vh;
+        border-radius: 25px;
+
+    }
+
+    .formlabel {
+        align-items: center;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        /* margin-right: 1vh; */
+    }
+
+    .formp {
+        margin: 5vh;
+        display: flex;
+        justify-content: center;
+    }
+
+    .forminput {
+        margin-left: 2vh;
+        margin-right: 2vh;
+        padding: 2vh;
+        border-radius: 25px;
+    }
+
+    .formbutton {
+        padding: 1vh 5vh 1vh 5vh;
+        background-color: black;
+        margin-bottom: 1vh;
+        color: white;
+        border: 1px solid black;
+        border-radius: 25px;
+        box-shadow: none;
+    }
+
+    .formbutton:hover {
+        cursor: pointer;
+        animation: button 1s forwards;
+    }
+
+    .mainsupport {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        width: 100%;
+        margin: 0px;
+    }
+
+    .productlink {
+        text-decoration: none;
+        color: white;
+        background-color: black;
+        border-radius: 50px;
+        padding: 2vh;
+        text-align: center;
+    }
+
+    .productname {
+        text-align: center;
+    }
+
+    .productimage {
+        width: 100%;
+    }
+
+    .all {
+        visibility: hidden;
+        height: 0px;
+        width: 0px;
+    }
+
+}
+
+
+
+/* Mobile */
+
+@media only screen and (max-width: 600px) {
+
+    * {
+        margin: 0px;
+        padding: 0px;
+        overflow-x: hidden;
+    }
+
+    .desktopnav {
+        visibility: hidden;
+        width: 0px;
+        height: 0px;
+    }
+
+    .mobilenav {
+        width: 100%;
+        background-color: #FF64C1;
+        display: inline-block;
+        position: fixed;
+    }
+
+    .mainmobilediv {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+
+    #mobilenavdiv {
+        background-color: #FF64C1;
+        padding: 0vh 1vh 1vh 1vh;
+        margin-bottom: 0vh;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .mobilenavdivhidden {
+        visibility: hidden;
+        width: 0px;
+        height: 0px;
+    }
+
+    .mobilenavdiv {
+        visibility: visible;
+        animation: mobilenavthing 0.5s forwards;
+    }
+
+    main {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+        background-color: #FDA19F;
+        padding-top: 10vh;
+    }
+
+    .first {
+        background-color: rgba(255,255,255,0.2);
+        border-radius: 25px;
+        margin: 2vh;
+        padding: 1vh;
+    }
+
+    .contactform {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        border: 2px solid black;
+        margin-top: 5vh;
+        margin-bottom: 5vh;
+        width: 45vh;
+        padding: 1vh 0vh 1vh 0vh;
+        border-radius: 25px;
+    }
+
+    .formlabel {
+        align-items: center;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 3px;
+        /* margin-right: 1vh; */
+    }
+
+    .formp {
+        margin: 5vh 5vh 0vh 5vh;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .forminput {
+        margin-left: 2vh;
+        margin-right: 2vh;
+        padding: 1vh;
+        border-radius: 25px;
+        border: none;
+    }
+
+    .forminputtext {
+        padding: 1.5vh;
+        border-radius: 25px;
+        height: 20vh;
+        border: none;
+    }
+
+    .formbutton {
+        padding: 1vh 5vh 1vh 5vh;
+        background-color: black;
+        margin-bottom: 1vh;
+        color: white;
+        border: 1px solid black;
+        border-radius: 25px;
+        box-shadow: none;
+    }
+
+    .formbutton:hover {
+        cursor: pointer;
+        animation: button 1s forwards;
+    }
+
+    .mainsupport {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        width: 100%;
+        margin: 0px;
+    }
+
+    .mobilenava {
+        color: black;
+        text-decoration: none;
+        padding: 2vh;
+        text-align: center;
+    }
+
+    .logotext {
+        float: left;
+        width: 50px;
+        padding-top: 1.2vh;
+        padding-left: 2vh;
+    }
+
+    .mobilenavli {
+        list-style-type: none;
+    }
+
+    #iconimg {
+        width: 30px;
+        height: 30px;
+        padding: 3vh 2vh 2vh 2vh;
+    }
+
+    #ham {
+        border: none;
+        background: none;
+        float: right;
+    }
+
+    .productdiv {
+        border: 2px solid black;
+        border-radius: 25px;
+        background-color: white;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        padding: 2vh;
+        margin: 2vh;
+    }
+
+    .productdiv1 {
+        border: 2px solid black;
+        border-radius: 25px;
+        background-color: white;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        padding: 2vh;
+        margin: 2vh 1vh 2vh 1vh;
+        width: 13vh;
+    }
+
+    .productlink {
+        text-decoration: none;
+        color: white;
+        background-color: black;
+        border-radius: 50px;
+        padding: 2vh;
+        text-align: center;
+    }
+
+    .productname {
+        text-align: center;
+    }
+
+    .productimage {
+        width: 100%;
+    }
+
+    .searchdiv {
+        visibility: hidden;
+        width: 0px;
+        height: 0px;
+    }
+
+    .searchdiv1 {
+        visibility: visible;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .searchdiv2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background-color: rgba(255,255,255,0.2);
+        border-radius: 25px;
+        margin: 2vh;
+        padding: 1vh;
+    }
+
+    .catform {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    #select {
+        margin-left: 2vh;
+        margin-right: 2vh;
+        padding: 1vh;
+        border-radius: 25px;
+        border: none;
+    }
+
+    #filterBtn {
+        padding: 1vh 5vh 1vh 5vh;
+        background-color: black;
+        margin-bottom: 1vh;
+        color: white;
+        border: 1px solid black;
+        border-radius: 25px;
+        box-shadow: none;
+    }
+    
+}
